@@ -1,8 +1,16 @@
 import express from 'express'
 import {dirname,join} from 'path'
 import { fileURLToPath } from 'url'
+import path from 'path'
+import cors from 'cors'
 
+
+
+const port = process.env.PORT || 3000
+const { urlencode, json } = express
 const app = express()
+
+app.use(cors())
 //Inicializar connections
 
 import indexRoutes from './Routes/index.js'
@@ -13,6 +21,8 @@ app.set('views', join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 app.use(indexRoutes)
 
+
+// Uso de contenido estatico y css
 app.use(express.static(__dirname+ '/public'))
 
 
