@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(12, 128, 230);
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+.container-fluid{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card{
+    margin: 15px;
+}
+
+div.contenedor{
+    display: flex;
+    padding: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+}
+
